@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Veb Sayt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">UltraTech</div>
+        <ul class="nav-links">
+            <li><a href="#home">Ana Səhifə</a></li>
+            <li><a href="#about">Haqqımızda</a></li>
+            <li><a href="#services">Xidmətlər</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#testimonials">Rəylər</a></li>
+            <li><a href="#contact">Əlaqə</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-text">Xoş Gəlmisiniz</h1>
+            <p class="animate-text">Modern və Professional Veb Həllər</p>
+            <div class="hero-buttons">
+                <button class="cta-button primary">Ətraflı</button>
+                <button class="cta-button secondary">Demo</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Aşağı sürüşdürün</p>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 data-aos="fade-up">Haqqımızda</h2>
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+                <p>Biz müasir texnologiyalar və yaradıcı həllər təklif edən professional komandayıq.</p>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Professional Komanda</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Müasir Texnologiyalar</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>24/7 Dəstək</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat" data-count="1000" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-users"></i>
+                    <h3>0</h3>
+                    <p>Müştəri</p>
+                </div>
+                <div class="stat" data-count="500" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>0</h3>
+                    <p>Layihə</p>
+                </div>
+                <div class="stat" data-count="50" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-award"></i>
+                    <h3>0</h3>
+                    <p>Mükafat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 data-aos="fade-up">Xidmətlərimiz</h2>
+        <div class="services-grid">
+            <div class="service-card" data-tilt data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Veb Dizayn</h3>
+                <p>Modern və responsive veb saytlar</p>
+                <ul class="service-features">
+                    <li>Responsive Dizayn</li>
+                    <li>Modern UI/UX</li>
+                    <li>SEO Optimizasiyası</li>
+                </ul>
+                <button class="learn-more">Ətraflı</button>
+            </div>
+            <div class="service-card" data-tilt data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobil Tətbiqlər</h3>
+                <p>iOS və Android üçün tətbiqlər</p>
+                <ul class="service-features">
+                    <li>Native Tətbiqlər</li>
+                    <li>Cross-platform</li>
+                    <li>Push Bildirişlər</li>
+                </ul>
+                <button class="learn-more">Ətraflı</button>
+            </div>
+            <div class="service-card" data-tilt data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>SEO</h3>
+                <p>Axtarış sistemlərində yüksəliş</p>
+                <ul class="service-features">
+                    <li>Keyword Analizi</li>
+                    <li>Content Marketing</li>
+                    <li>Link Building</li>
+                </ul>
+                <button class="learn-more">Ətraflı</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2 data-aos="fade-up">Portfolio</h2>
+        <div class="portfolio-filter" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">Hamısı</button>
+            <button class="filter-btn" data-filter="web">Veb</button>
+            <button class="filter-btn" data-filter="mobile">Mobil</button>
+            <button class="filter-btn" data-filter="design">Dizayn</button>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://picsum.photos/400/300" alt="Project 1">
+                <div class="portfolio-overlay">
+                    <h3>Veb Layihə 1</h3>
+                    <p>Veb Dizayn</p>
+                    <div class="portfolio-links">
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://picsum.photos/400/301" alt="Project 2">
+                <div class="portfolio-overlay">
+                    <h3>Mobil Tətbiq 1</h3>
+                    <p>iOS Tətbiq</p>
+                    <div class="portfolio-links">
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="design" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://picsum.photos/400/302" alt="Project 3">
+                <div class="portfolio-overlay">
+                    <h3>Dizayn Layihə 1</h3>
+                    <p>UI/UX Dizayn</p>
+                    <div class="portfolio-links">
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                        <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2 data-aos="fade-up">Müştəri Rəyləri</h2>
+        <div class="testimonials-slider swiper" data-aos="fade-up">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Əla xidmət və professional komanda. Layihəmizi tamamladılar və nəticədən çox məmnunam.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/100/100" alt="Author">
+                            <div class="author-info">
+                                <h4>Əli Məmmədov</h4>
+                                <p>CEO,  Play Interactive</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Çox yaxşı işləyirlər. Vaxtında və keyfiyyətli xidmət göstərirlər.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/101/101" alt="Author">
+                            <div class="author-info">
+                                <h4>Aynur Əliyeva</h4>
+                                <p>Marketing Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2 data-aos="fade-up">Blog</h2>
+        <div class="swiper blog-slider" data-aos="fade-up">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://picsum.photos/400/303" alt="Blog 1">
+                            <div class="blog-date">
+                                <span class="day">15</span>
+                                <span class="month">Mart</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-tags">
+                                <span>Veb Dizayn</span>
+                                <span>Trendlər</span>
+                            </div>
+                            <h3>Veb Dizayn Trendləri 2024</h3>
+                            <p>2024-cü ildə veb dizayn sahəsində gözlənilən əsas trendlər...</p>
+                            <div class="blog-footer">
+                                <a href="#" class="read-more">Ətraflı Oxu</a>
+                                <div class="blog-stats">
+                                    <span><i class="fas fa-eye"></i> 1.2K</span>
+                                    <span><i class="fas fa-comment"></i> 8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://picsum.photos/400/304" alt="Blog 2">
+                            <div class="blog-date">
+                                <span class="day">10</span>
+                                <span class="month">Mart</span>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-tags">
+                                <span>SEO</span>
+                                <span>Marketing</span>
+                            </div>
+                            <h3>SEO Optimizasiyası</h3>
+                            <p>Veb saytınızı axtarış sistemlərində yuxarı sıralara çıxarmaq üçün...</p>
+                            <div class="blog-footer">
+                                <a href="#" class="read-more">Ətraflı Oxu</a>
+                                <div class="blog-stats">
+                                    <span><i class="fas fa-eye"></i> 2.5K</span>
+                                    <span><i class="fas fa-comment"></i> 12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 data-aos="fade-up">Bizimlə Əlaqə</h2>
+        <div class="contact-container">
+            <form class="contact-form" data-aos="fade-right">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Adınız</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">E-poçt</label>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" required>
+                    <label for="phone">Telefon</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Mesajınız</label>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Göndər</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+            <div class="contact-info" data-aos="fade-left">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-content">
+                        <h3>Ünvan</h3>
+                        <p>Bakı şəhəri, Azərbaycan</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="info-content">
+                        <h3>Telefon</h3>
+                        <p>+994 50 123 45 67</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info-content">
+                        <h3>E-poçt</h3>
+                        <p>info@example.com</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="theme-switch">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-logo">Brand</div>
+                <p>Modern və professional veb həllər təklif edən şirkət.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Sürətli Linklər</h3>
+                <ul>
+                    <li><a href="#home">Ana Səhifə</a></li>
+                    <li><a href="#about">Haqqımızda</a></li>
+                    <li><a href="#services">Xidmətlər</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Xəbər Bülleteni</h3>
+                <p>Yeni məhsullar və xəbərlər haqqında məlumat almaq üçün abunə olun.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="E-poçt ünvanınız">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bütün hüquqlar qorunur</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module" src="animations.js"></script>
+    <script src="main.js"></script>
+</body>
+</html> 
