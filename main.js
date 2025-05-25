@@ -16,7 +16,7 @@ burger.addEventListener('click', () => {
         if (link.style.animation) {
             link.style.animation = '';
         } else {
-            link.style.animation = navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s;
+            link.style.animation = "navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s";
         }
     });
 
@@ -39,7 +39,7 @@ form.addEventListener('submit', (e) => {
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
     
     setTimeout(() => {
-        submitBtn.innerHTML = '<i class="fas fa-check"></i> GÃ¶ndÉrildi!';
+        submitBtn.innerHTML = '<i class="fas fa-check"></i> Göndərildi!';
         form.reset();
         setTimeout(() => {
             submitBtn.innerHTML = '<span>GÃ¶ndÉr</span><i class="fas fa-paper-plane"></i>';
